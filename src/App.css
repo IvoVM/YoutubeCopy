@@ -13,12 +13,15 @@
 .category-icon {
   color: red;
   margin-right: 15px;
-
 }
 .category-btn:hover {
-  background-color: #fc1503 !important;
+  background-color: #fc1503;
   color: #fff;
 }
 .category-btn:hover .category-icon {
-  color: #fff;
+  color: #fff !important;
+}
+
+.caja::-webkit-scrollbar {
+  display: none;
 }

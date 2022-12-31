@@ -11,7 +11,7 @@ const Feed = () => {
         setVideos(data.items);
       }
     );
-  }, []);
+  }, [selectedCategory]);
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
@@ -33,7 +33,7 @@ const Feed = () => {
           Copyright 2022 IvoVM
         </Typography> */}
       </Box>
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+      <Box p={2} sx={{ overflow: "auto", height: "90vh", flex: 2 }} className='caja'>
         <Typography
           variant="h4"
           sx={{ color: "#fff" }}
