@@ -6,11 +6,9 @@ const Feed = () => {
   const [videos, setVideos] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("New");
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then(
-      (data) => {
-        setVideos(data.items);
-      }
-    );
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {
+      setVideos(data.items);
+    });
   }, [selectedCategory]);
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
@@ -33,7 +31,11 @@ const Feed = () => {
           Copyright 2022 IvoVM
         </Typography> */}
       </Box>
-      <Box p={2} sx={{ overflow: "auto", height: "90vh", flex: 2 }} className='caja'>
+      <Box
+        p={2}
+        sx={{ overflow: "auto", height: "90vh", flex: 2 }}
+        className="caja"
+      >
         <Typography
           variant="h4"
           sx={{ color: "#fff" }}
