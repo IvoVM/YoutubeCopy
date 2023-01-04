@@ -2,7 +2,7 @@
 
 const VideoDetail= ()=>{
     return(
-        <h2>asdasd</h2>
+        <h2>Video Detail</h2>
     )
 }
 
