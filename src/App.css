@@ -1,3 +1,11 @@
+
+.title{
+  text-decoration: none;
+  height: 45px;
+  color: #fff;
+  outline: none;
+  margin-left: 20px;
+}
 .category-btn {
   color: white;
   border: none;

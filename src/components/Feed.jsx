@@ -23,17 +23,17 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        {/* <Typography
+         <Typography
           className="copyright"
           variant="body2"
           sx={{ mt: 1.5, color: "#fff" }}
         >
           Copyright 2022 IvoVM
-        </Typography> */}
+        </Typography> 
       </Box>
       <Box
         p={2}
-        sx={{ overflow: "auto", height: "90vh", flex: 2 }}
+        sx={{ overflowY: "auto", height: "90vh", flex: 2 }}
         className="caja"
       >
         <Typography
@@ -43,7 +43,7 @@ const Feed = () => {
           mb={2}
         >
           {selectedCategory}
-          <span style={{ color: "#f31503", marginLeft: "0.5rem" }}>videos</span>
+          <span style={{ color: "#f31503" }}>videos</span>
         </Typography>
         <Videos videos={videos} />
       </Box>
